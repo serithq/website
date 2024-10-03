@@ -1,0 +1,194 @@
+body {
+    padding: 30px 0px 0px 0px; /* bodyの内側余白を指定する(上:右:下:左) */
+    overflow-x: hidden;
+}
+
+.wrapper {
+    overflow-x: hidden;
+}
+
+.top_img {
+    width: 70%;
+    height: 70%;
+    opacity: 0.9;
+    filter: brightness(0.95);
+    margin-top: 4em;
+}
+
+p {
+    position: relative;
+    z-index: 100;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    position: fixed; /* ヘッダーを固定する */
+    top: 0; /* 上部から配置の基準位置を決める */
+    left: 0; /* 左から配置の基準位置を決める */
+    width: 100%; /* ヘッダーの横幅を指定する */
+    height: 35px; /* ヘッダーの高さを指定する */
+    padding: 10px; /* ヘッダーの余白を指定する(上下左右) */
+    background-color: #DBB0B0; /* ヘッダーの背景色を指定する */
+    opacity: 1.0;
+    color: white; /* フォントの色を指定する */
+    z-index: 1000;
+}
+
+.Contents{
+    width: 100%; /* コンテンツの横幅を指定する */
+    overflow: auto; /* コンテンツの表示を自動に設定（スクロール） */
+}
+
+.text-about {
+    position: absolute;
+    top: 2.4em; /* 文字の垂直位置を調整 */
+    left: 3em; /* 文字の水平位置を調整 */
+    transform: translate(-2em, -0.8em);
+    color: black; /* 文字の色を設定 */
+    font-size: 3em; /* フォントサイズを設定 */
+    padding: 10px; /* パディングを設定 */
+    border-radius: 5px; /* 角を丸くする */
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.zen-kaku-gothic-new-regular {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20;
+    position: relative;
+    z-index: 100;
+    top: -8em; /* 文字の垂直位置を調整 */
+}
+
+.about {
+    padding-left: 5em; /* 左側に余白を設定 */
+    position: relative;
+    z-index: 100;
+}
+
+.large-text {
+    font-size: 25px;
+}
+
+.tokuhitsu-title {
+    font-size: 15px;
+}
+
+.tokuhitsu-text {
+    font-size: 15px;
+    left: 100px;
+    z-index: 10;
+}
+
+.keireki-title {
+    font-size: 25px;
+    left: 12em;
+}
+
+.keireki-text {
+    font-size: 15px;
+    left: 20em;
+    z-index: 10;
+}
+
+.shikaku-title {
+    font-size: 25px;
+    left: 3em;
+}
+
+.shikaku-text {
+    font-size: 15px;
+    left: 5em;
+    z-index: 10;
+}
+
+.menu-item {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.white-link {
+    text-decoration: none;
+    color: white; /* フォントの色を指定する */
+}
+
+.white-link:hover {
+    color: #A1A3A6;
+}
+
+.black-link {
+    color: black; /* フォントの色を指定する */
+}
+
+.black-link:hover {
+    color: blue;
+}
+
+.text{
+    color: black;
+}
+
+.overlay1 {
+    position: absolute; /* SVGを絶対配置に設定 */
+    top: -19em; /* 上端に配置 */
+    left: -17em; /* 左端に配置 */
+    width: 50em; /* コンテナ幅いっぱいに広げる */
+    height: auto; /* コンテナ高さいっぱいに広げる */
+    z-index: 1;
+}
+
+.overlay2 {
+    position: absolute; /* SVGを絶対配置に設定 */
+    top: 4em; /* 上端に配置 */
+    left: 6em; /* 左端に配置 */
+    width: 70em; /* コンテナ幅いっぱいに広げる */
+    height: 40em; /* コンテナ高さいっぱいに広げる */
+    z-index: 0;
+}
+
+div.a3 {
+    border:0px solid red;
+}
+
+.overlay3 {
+    position: relative;
+    margin-top: -40em;
+    top: 8em;
+    left: -13em;
+    width: 40em;
+    height: 30em;
+    z-index: -1;
+}
+
+.dotted-underline {
+    text-decoration: underline; /* アンダーバーを設定 */
+    text-decoration-style: dotted; /* 点線のスタイル */
+}
+
+@media (max-width: 820px) {
+    .zen-kaku-gothic-new-regular {
+        top: -1.0em;
+    }
+}
+
+@media (max-width: 1000px) {
+    .keireki-title {
+        left: 0em;
+    }
+
+    .keireki-text {
+        left: 0em;
+    }
+
+    .shikaku-title {
+        left: 0em;
+    }
+
+    .shikaku-text {
+        left: 0em;
+    }
+}
